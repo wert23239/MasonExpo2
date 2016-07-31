@@ -12,40 +12,45 @@ namespace Site;
 class SiteManager
 {
 
-
+    //Display is what will show up as the Page Title and Main Header on the page
     const CraftersDisplay="Crafters";
     const CarDisplay="Car Show";
     const MotorcycleDisplay="Motorcycle Show";
     const TractorDisplay="Tractor Show";
 
-
+    //SlideShow are the image colection that is displayed under the header
     const CraftersSlideShow=array("");
     const CarSlideShow=array("");
     const MotorcycleSlideShow=array("");
     const TractorSlideShow=array("");
 
+    //Info is the link to the info tab of each page this is always a pdf
     const CraftersInfo="";
     const CarInfo="";
     const MotorcycleInfo="";
     const TractorInfo="";
 
-
+    //Forum is the signup tab link it is embedded google forum
     const CraftersForum="";
     const CarForum="";
     const MotorcycleForum="";
     const TractorForum="";
-    
+
+
+    //Map is largely still unknown end users still wants it should be a jpg
     const CraftersMap="";
     const CarMap="";
     const MotorcycleMap="";
     const TractorMap="";
 
 
+    //Icon is what will display on the Main page
     const CraftersIcon="";
     const CarIcon="";
     const MotorcycleIcon="";
     const TractorIcon="";
 
+    //Num is the Number of which the icons will display (should be 8 total when there done)
     const CraftersNum=0;
     const CarNum=1;
     const MotorcycleNum=2;

@@ -15,7 +15,7 @@ class IndividualSite
     //const ImagePath = "images/";
     const namePath = "EventDisplay.php?id=";
 
-    public function __construct($number,$display,array $slideShow, $info, $forum, $map)
+    public function __construct($number,$display,array $slideShow, $info, $forum, $map,$icon)
     {
         $this->name = self::namePath;
         $this->name .= $number;
@@ -25,6 +25,7 @@ class IndividualSite
         $this->info = $info;
         $this->forum = $forum;
         $this->map=$map;
+        $this->icon=$icon;
 
     }
 
@@ -35,6 +36,7 @@ class IndividualSite
     private $info;
     private $forum;
     private $map;
+    private $icon;
 
     /**
      * @return string
@@ -146,6 +148,16 @@ class IndividualSite
     public function setMap($map)
     {
         $this->map = $map;
+    }
+
+    public function getIcon()
+    {
+        return $this->icon;
+    }
+
+    public function setIcon($icon)
+    {
+        $this->icon = $icon;
     }
 
 
