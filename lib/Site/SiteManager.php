@@ -65,7 +65,6 @@ class SiteManager
         $this->id=$id;
         $this->initialize();
        // var_dump($this->Code);
-        $this->type=$this->Code[$id]->getType();
         $this->current=$this->Code[$id];
         $this->find();
     }

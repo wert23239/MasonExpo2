@@ -63,16 +63,16 @@ HTML;
 
     public function presentheader(){
 
-        define('VISUALCITYNUM', SiteManager::VisualCityNum);
-        define('VISUALTREENUM', SiteManager::VisualTreeNum);
-        define('VIRTUALEVOLUTIONNUM', SiteManager::MarkovBrainNum);
-        define('EMITTERNUM', SiteManager::EmitterNum);
-        define('VANIANUM', SiteManager::VaniaNum);
-        define('STEAMPUNKEDNUM', SiteManager::SteamPunkedNum);
-        define('EMPLOYFAINUM', SiteManager::EmployfaiNum);
-        define('SHADOWSNUM', SiteManager::ShadowsNum);
-        define('ALPHABETNUM', SiteManager::VirtualAlphaNum);
-        define('COMPILENUM', SiteManager::CompilerNum);
+//        define('VISUALCITYNUM', SiteManager::VisualCityNum);
+//        define('VISUALTREENUM', SiteManager::VisualTreeNum);
+//        define('VIRTUALEVOLUTIONNUM', SiteManager::MarkovBrainNum);
+//        define('EMITTERNUM', SiteManager::EmitterNum);
+//        define('VANIANUM', SiteManager::VaniaNum);
+//        define('STEAMPUNKEDNUM', SiteManager::SteamPunkedNum);
+//        define('EMPLOYFAINUM', SiteManager::EmployfaiNum);
+//        define('SHADOWSNUM', SiteManager::ShadowsNum);
+//        define('ALPHABETNUM', SiteManager::VirtualAlphaNum);
+//        define('COMPILENUM', SiteManager::CompilerNum);
         $cname = 'constant'; // if you want to use a function in heredoc, you must save function name in variable
 
         $html=<<<HTML
