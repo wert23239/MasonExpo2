@@ -87,13 +87,13 @@ HTML;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index2.html">Outdoor Expo & More</a>
+                <a class="navbar-brand" href="index.php">Outdoor Expo & More</a>
             </div>
             <!-- menu items -->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index2.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a href="oldind.html">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="vendors.html">Commercial Vendors</a></li>
                             <li><a href="crafters.html">Crafters</a></li>
                             <li><a href="cars.html">Car Show</a></li>
