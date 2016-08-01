@@ -25,8 +25,8 @@ class SiteManager
     const TractorSlideShow=array("");
 
     //Info is the link to the info tab of each page this is always a pdf
-    const CraftersInfo="Cars.jpeg";
-    const CarInfo="Crafters.png";
+    const CraftersInfo="Crafters.png";
+    const CarInfo="Cars.jpeg";
     const MotorcycleInfo="Motorcycle.jpeg";
     const TractorInfo="Tractor.jpeg";
 

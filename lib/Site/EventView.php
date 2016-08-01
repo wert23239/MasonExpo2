@@ -18,12 +18,13 @@ class EventView extends View
         $this->image=$this->current->getSlideShow();
     }
     public function headadditional(){
-        $check=$this->Title;
+        $title=$this->Title;
         $id=$this->id;
         $html=<<<HTML
+    <title>MasonExpo | $title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <meta name="description" content="Nothing quite like the Mason Expo.">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">

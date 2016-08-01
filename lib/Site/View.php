@@ -15,7 +15,7 @@ class View
     return "";
 }
     public function headadditional(){
-       return "";
+       return "<title>MasonExpo</title>";
     }
 
     public function presenthead($Title){
@@ -27,8 +27,10 @@ class View
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mason Expo | Crafters</title>
-
+HTML;
+        $html.=$this->headadditional();
+        $html.="</head>";
+$html.=<<<HTML
     <!-- Bootstrap -->
     <link href="node_modules/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="style/navbar.css" rel="stylesheet">
@@ -47,14 +49,8 @@ class View
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="jslib/header.js"></script>
     <script src="typed.js"></script>
-    <script>
-//        $(document).ready(function() {
-//            new TypeName("Welcome");
-//        });
-    </script>
+ </head>
 HTML;
-        $html.=$this->headadditional();
-        $html.="</head>";
         return $html;
     }
 
