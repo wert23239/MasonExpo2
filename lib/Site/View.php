@@ -86,7 +86,6 @@ HTML;
        for ($i = 0; $i<$Count;$i++)
        {
             $html.="<li ><a href='page-post.php?id=$i&Display=1'>";
-           var_dump($this->connections->getCodeIndex($i));
             $html.=$this->connections->getCodeIndex($i)->getDisplay();
             $html.="</a ></li >";
        }

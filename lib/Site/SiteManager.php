@@ -96,7 +96,6 @@ class SiteManager
                  self::TractorForum,self::TractorMap,self::TractorIcon) ,
          );
         $this->total=sizeof($this->Code);
-        vardump($this->total);
     }
 
     /**
