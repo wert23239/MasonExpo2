@@ -18,7 +18,7 @@ class EventView extends View
         $this->image=$this->current->getSlideShow();
     }
     public function headadditional(){
-        $title=$this->Title;
+        $title=$this->title;
         $id=$this->id;
         $html=<<<HTML
     <title>MasonExpo | $title</title>
@@ -47,9 +47,9 @@ HTML;
     }
 
 
-    public function presenthead($Title)
+    public function presenthead()
     {
-        return parent::presenthead($this->title);
+        return parent::presenthead();
     }
 
     public function presentDisplay()
@@ -86,7 +86,6 @@ private $download="";
     private $id="";
     private $current;
     private $title="";
-    private $connections;
     private $color="";
     private $image="";
     private $description="";

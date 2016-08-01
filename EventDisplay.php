@@ -4,7 +4,7 @@ $view= new Site\EventView($site);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php echo $view->presenthead("") ?>
+<?php echo $view->presenthead() ?>
 
 <body class="project">
 

@@ -6,9 +6,9 @@ class View
 {
     /** Constructor
      */
-    public function __construct()
+    public function __construct(SiteManager $site)
     {
-
+        $this->connections= $site;
     }
 
     public function headeradditional(){
@@ -18,8 +18,7 @@ class View
        return "<title>MasonExpo</title>";
     }
 
-    public function presenthead($Title){
-        $this->Title=$Title;
+    public function presenthead(){
         $html="";
         $html.=<<<HTML
 <head>
@@ -59,18 +58,8 @@ HTML;
 
     public function presentheader(){
 
-//        define('VISUALCITYNUM', SiteManager::VisualCityNum);
-//        define('VISUALTREENUM', SiteManager::VisualTreeNum);
-//        define('VIRTUALEVOLUTIONNUM', SiteManager::MarkovBrainNum);
-//        define('EMITTERNUM', SiteManager::EmitterNum);
-//        define('VANIANUM', SiteManager::VaniaNum);
-//        define('STEAMPUNKEDNUM', SiteManager::SteamPunkedNum);
-//        define('EMPLOYFAINUM', SiteManager::EmployfaiNum);
-//        define('SHADOWSNUM', SiteManager::ShadowsNum);
-//        define('ALPHABETNUM', SiteManager::VirtualAlphaNum);
-//        define('COMPILENUM', SiteManager::CompilerNum);
-        $cname = 'constant'; // if you want to use a function in heredoc, you must save function name in variable
 
+        $Count=$this->connections->getCount();
         $html=<<<HTML
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -91,10 +80,19 @@ HTML;
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="oldind.html">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="vendors.html">Commercial Vendors</a></li>
-                            <li><a href="page-post.php?id=0&Display=1">Crafters</a></li>
-                            <li><a href="page-post.php?id=1&Display=1">Car Show</a></li>
-                            <li><a href="page-post.php?id=2&Display=1">Motorcycle Show</a></li>
-                            <li><a href="page-post.php?id=3&Display=1">Tractor Show</a></li>
+HTML;
+
+
+       for ($i = 0; $i<$Count;$i++)
+       {
+            $html.="<li ><a href='page-post.php?id=$i&Display=1'>";
+           var_dump($this->connections->getCodeIndex($i));
+            $html.=$this->connections->getCodeIndex($i)->getDisplay();
+            $html.="</a ></li >";
+       }
+
+        $html.=<<<HTML
+
                             <li><a href="sponsors.html">Sponsors</a></li>
                         </ul>
 
@@ -120,6 +118,7 @@ HTML;
 
     return $html;
     }
- protected $Title;
+    private $Title;
+    protected $connections;
 }
 

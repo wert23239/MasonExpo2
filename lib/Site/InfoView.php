@@ -18,9 +18,10 @@ class InfoView extends View
         $this->info=$this->current->getInfo();
     }
     public function headadditional(){
-        $check=$this->Title;
+        $title=$this->title;
         $id=$this->id;
         $html=<<<HTML
+    <title>MasonExpo | $title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
@@ -46,9 +47,9 @@ HTML;
     }
 
 
-    public function presenthead($Title)
+    public function presenthead()
     {
-        return parent::presenthead($this->title);
+        return parent::presenthead();
     }
 
     public function presentDisplay()
@@ -65,7 +66,6 @@ HTML;
 private $download="";
     private $gitlink="";
     private $id="";
-    private $connections="";
     private $current;
     private $info="";
     private $title="";

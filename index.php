@@ -1,12 +1,12 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\View();
+$view= new Site\View($site);
 ?>
 
 <!doctype html>
 <html lang='en'>
 
-<?php echo $view->presenthead("Home") ?>
+<?php echo $view->presenthead() ?>
 <body>
 <?php echo $view->presentheader() ?>
 

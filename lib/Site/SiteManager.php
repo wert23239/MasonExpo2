@@ -74,9 +74,9 @@ class SiteManager
                 $this->previous=$this->Code[$this->id-1];
             }
             else{
-                $this->previous=$this->Code[self::Total-1];
+                $this->previous=$this->Code[$this->total-1];
             }
-            if($this->id!=self::Total-1){
+            if($this->id!=$this->total-1){
                 $this->next=$this->Code[$this->id+1];
             }
             else{
@@ -95,6 +95,8 @@ class SiteManager
              self::TractorNum => new IndividualSite(self::TractorNum,self::TractorDisplay,self::TractorSlideShow,self::TractorInfo,
                  self::TractorForum,self::TractorMap,self::TractorIcon) ,
          );
+        $this->total=sizeof($this->Code);
+        vardump($this->total);
     }
 
     /**
@@ -128,11 +130,21 @@ class SiteManager
         return $this->id;
     }
 
+    public function getCount()
+    {
+        return $this->total;
+    }
+
+    public function getCodeIndex($index)
+    {
+        return $this->Code[$index];
+    }
 
     private $id=0;
     private $type;
     private $next;
     private $previous;
     private $current;
+    private $total;
     private $Code=array();
 }

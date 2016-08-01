@@ -17,8 +17,8 @@ class ForumView extends View
         $this->title=$this->current->getDisplay();
         $this->forum=$this->current->getForum();
     }
-    public function headadditional(){
-        $check=$this->Title;
+    public function headadditional()
+    {
         $id=$this->id;
         $html=<<<HTML
     <meta charset="utf-8">
@@ -46,9 +46,9 @@ HTML;
     }
 
 
-    public function presenthead($Title)
+    public function presenthead()
     {
-        return parent::presenthead($this->title);
+        return parent::presenthead();
     }
 
     public function presentDisplay()
