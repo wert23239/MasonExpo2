@@ -11,8 +11,8 @@ namespace Site;
 
 class IndividualSite
 {
-    //const DownloadPath = "downloads/";
-    //const ImagePath = "images/";
+    const InfoPath = "Info/";
+    const ImagePath = "images/";
     const namePath = "EventDisplay.php?id=";
 
     public function __construct($number,$display,array $slideShow, $info, $forum, $map,$icon)
@@ -22,7 +22,9 @@ class IndividualSite
         $this->number = $number;
         $this->display = $display;
         $this->slideShow = $slideShow;
-        $this->info = $info;
+        $this->info = self::ImagePath;
+        $this->info .= self::InfoPath;
+        $this->info .= $info;
         $this->forum = $forum;
         $this->map=$map;
         $this->icon=$icon;

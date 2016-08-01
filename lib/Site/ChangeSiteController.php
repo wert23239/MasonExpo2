@@ -35,10 +35,10 @@ class ChangeSiteController{
             $this->page="EventDisplay.php";
         }
         else if(isset($request['Info'])){
-            $this->page="EventDisplay.php";
+            $this->page="InfoDisplay.php";
         }
         else if(isset($request['Forum'])){
-            $this->page="EventDisplay.php";
+            $this->page="ForumDisplay.php";
         }
         else if(isset($request['Map'])){
             $this->page="EventDisplay.php";

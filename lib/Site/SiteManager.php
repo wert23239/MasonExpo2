@@ -25,16 +25,16 @@ class SiteManager
     const TractorSlideShow=array("");
 
     //Info is the link to the info tab of each page this is always a pdf
-    const CraftersInfo="";
-    const CarInfo="";
-    const MotorcycleInfo="";
-    const TractorInfo="";
+    const CraftersInfo="Cars.jpeg";
+    const CarInfo="Crafters.png";
+    const MotorcycleInfo="Motorcycle.jpeg";
+    const TractorInfo="Tractor.jpeg";
 
     //Forum is the signup tab link it is embedded google forum
-    const CraftersForum="";
-    const CarForum="";
-    const MotorcycleForum="";
-    const TractorForum="";
+    const CraftersForum="https://docs.google.com/forms/d/e/1FAIpQLScf62z7GBqhlVbDgHNOP2EZJkv90bBRqE9LqnsdeqouqRwlew/viewform?embedded=true";
+    const CarForum="https://docs.google.com/forms/d/1_wTAd_RK3zp32WHtVB9NpAUKzgZDmQlrg9J8xusvsaI/viewform?embedded=true";
+    const MotorcycleForum="https://docs.google.com/forms/d/e/1FAIpQLScdSMGs7GHSt6vEpLIox7CDpEiF4__PEpgnaKbZnlRRIHSENg/viewform?embedded=true";
+    const TractorForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
 
 
     //Map is largely still unknown end users still wants it should be a jpg
