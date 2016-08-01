@@ -95,10 +95,10 @@ HTML;
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="oldind.html">Home <span class="sr-only">(current)</span></a></li>
                             <li><a href="vendors.html">Commercial Vendors</a></li>
-                            <li><a href="crafters.html">Crafters</a></li>
-                            <li><a href="cars.html">Car Show</a></li>
-                            <li><a href="motorcycles.html">Motorcycle Show</a></li>
-                            <li><a href="tractors.html">Tractor Show</a></li>
+                            <li><a href="page-post.php?id=0&Display=1">Crafters</a></li>
+                            <li><a href="page-post.php?id=1&Display=1">Car Show</a></li>
+                            <li><a href="page-post.php?id=2&Display=1">Motorcycle Show</a></li>
+                            <li><a href="page-post.php?id=3&Display=1">Tractor Show</a></li>
                             <li><a href="sponsors.html">Sponsors</a></li>
                         </ul>
 
