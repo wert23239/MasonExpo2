@@ -82,7 +82,6 @@ HTML;
                             <li><a href="vendors.html">Commercial Vendors</a></li>
 HTML;
 
-
        for ($i = 0; $i<$Count;$i++)
        {
             $html.="<li ><a href='page-post.php?id=$i&Display=1'>";

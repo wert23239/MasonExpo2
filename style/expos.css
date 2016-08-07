@@ -1,0 +1,130 @@
+@import url("normalize.css");
+@import url("navbar.css");
+@import url("font-awesome.min.css");
+
+body {
+    padding-top: 70px;
+}
+
+.container {
+    padding: 2em;
+}
+
+.Main{
+  display: block;
+}
+
+.special {
+    text-shadow: 2px 2px 4px #654321;
+    font-size: 100px;
+}
+
+.jumbotron {
+    font-family: 'FontAwesome', impact;
+    text-align: center;
+    color: brown;
+    background-image: url("paper-texture.jpg");
+}
+
+.well {
+    font-family: Forte, sans-serif;
+}
+
+.fill {
+    background-color: black;
+    color: white;
+    position: fixed;
+}
+
+.container {
+    position: relative;
+}
+
+.row {
+    clear: both;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    float: bottom;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #78de56;
+    color: white;
+    font-family: "Arial Black";
+    font-size: larger;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.google-form {
+    padding-bottom: 2em;
+}
+
+center {
+    text-align: center;
+}
+
+.list-style {
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    color: brown;
+}
+
+.time {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+iframe {
+    z-index: 2;
+    margin: 2em auto;
+    width: 100%;
+    border: solid thin darkgray;
+
+}
+
+iframe.map {
+    width: 400px;
+    height: 300px;
+    margin: 0;
+}
+
+.event-header, .event-info h2 {
+    text-align: center;
+}
+
+.event-header img {
+    width: 50%;
+}
+
+.event-info li {
+    color: #34495e;
+    display: block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    height: 33px;
+    letter-spacing: 0.1em;
+    line-height: 33px;
+    margin: 2em 0 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .event-header h1 {
+        font-size: 2em;
+    }
+}
+
+.header .row { /*position: fixed;*/
+    background: #3d7;
+}
+
+#address {
+    margin-top: 50em;
+}
