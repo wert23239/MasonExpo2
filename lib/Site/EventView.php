@@ -15,8 +15,14 @@ class EventView extends DynamicView
     {
         $Display=$this->title;
         $id=$this->id;
-        $Image=$this->image;
-        $html=<<<HTML
+        $images=$this->image;
+        $html="";
+        foreach($images as $image) {
+            $html.=<<<HTML
+            <img src="$image"><br>
+HTML;
+        }
+        $html.=<<<HTML
 
     <h1 class="CodeB"><strong>$Display</strong></h1>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

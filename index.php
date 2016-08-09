@@ -38,6 +38,13 @@ $view= new Site\View($site);
             <div class="col-xs-3 col-md-3"><a href="http://github.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive box" src="images/github.png"/></a></div>
             <div class="col-xs-3 col-md-3"><a href="mailto:lambe168@msu.edu"  class="thumbnail" target="_top"><img class="img-responsive box"  src="images/gmail.png"/></a></div>
         </div>
+
+    <div class="row Main">
+        <div class="col-xs-3 col-md-3"><a href="http://www.linkedin.com/in/alexlambert52" class="thumbnail" target="_blank"><img class="img-responsive box"  src="images/in.png"/></a></div>
+        <div class="col-xs-3 col-md-3"><a href="http://devpost.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive box"  src="images/devpost.jpg"/></a></div>
+        <div class="col-xs-3 col-md-3"><a href="http://github.com/wert23239" class="thumbnail" target="_blank"><img class="img-responsive box" src="images/github.png"/></a></div>
+        <div class="col-xs-3 col-md-3"><a href="mailto:lambe168@msu.edu"  class="thumbnail" target="_top"><img class="img-responsive box"  src="images/gmail.png"/></a></div>
+    </div>
 </div>
 
 </div>

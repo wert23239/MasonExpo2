@@ -15,13 +15,13 @@ class IndividualSite
     const ImagePath = "images/";
     const namePath = "EventDisplay.php?id=";
 
-    public function __construct($number,$display,array $slideShow, $info, $forum, $map,$icon)
+    public function __construct($number,$display,$slideShow, $info, $forum, $map,$icon)
     {
         $this->name = self::namePath;
         $this->name .= $number;
         $this->number = $number;
         $this->display = $display;
-        $this->slideShow = $slideShow;
+        $this->slideShow = $this->getPictures($slideShow);
         $this->info = self::ImagePath;
         $this->info .= self::InfoPath;
         $this->info .= $info;
@@ -48,6 +48,15 @@ class IndividualSite
         return $this->name;
     }
 
+
+
+    public function getPictures($FolderName)
+    {
+        $dirName = "images/";
+        $fullPath=$dirName.$FolderName."/";
+       return  glob($fullPath."*.*");
+
+    }
     /**
      * @param string $name
      */
@@ -161,6 +170,7 @@ class IndividualSite
     {
         $this->icon = $icon;
     }
+
 
 
 

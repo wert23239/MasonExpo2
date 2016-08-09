@@ -18,11 +18,11 @@ class SiteManager
     const MotorcycleDisplay="Motorcycle Show";
     const TractorDisplay="Tractor Show";
 
-    //SlideShow are the image colection that is displayed under the header
-    const CraftersSlideShow=array("");
-    const CarSlideShow=array("");
-    const MotorcycleSlideShow=array("");
-    const TractorSlideShow=array("");
+    //SlideShow are the folder where the slideshow is located
+    const CraftersSlideShow="CarShow";
+    const CarSlideShow="CraftShow";
+    const MotorcycleSlideShow="None";
+    const TractorSlideShow="TractorShow";
 
     //Info is the link to the info tab of each page this is always a pdf
     const CraftersInfo="Crafters.png";
