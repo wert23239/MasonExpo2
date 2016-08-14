@@ -13,6 +13,7 @@ class IndividualSite
 {
     const InfoPath = "Info/";
     const ImagePath = "images/";
+    const IconPath = "Icon/";
     const namePath = "EventDisplay.php?id=";
 
     public function __construct($number,$display,$slideShow, $info, $forum, $map,$icon)
@@ -27,7 +28,9 @@ class IndividualSite
         $this->info .= $info;
         $this->forum = $forum;
         $this->map=$map;
-        $this->icon=$icon;
+        $this->icon = self::ImagePath;
+        $this->icon .= self::IconPath;
+        $this->icon .= $icon;
 
     }
 

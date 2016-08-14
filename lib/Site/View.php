@@ -12,10 +12,10 @@ class View
     }
 
     public function headeradditional(){
-    return "";
-}
+        return "";
+    }
     public function headadditional(){
-       return "<title>MasonExpo</title>";
+        return "<title>MasonExpo</title>";
     }
 
     public function presenthead(){
@@ -29,7 +29,7 @@ class View
 HTML;
         $html.=$this->headadditional();
         $html.="</head>";
-$html.=<<<HTML
+        $html.=<<<HTML
     <!-- Bootstrap -->
     <link href="node_modules/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="style/navbar.css" rel="stylesheet">
@@ -82,12 +82,12 @@ HTML;
                             <li><a href="vendors.html">Commercial Vendors</a></li>
 HTML;
 
-       for ($i = 0; $i<$Count;$i++)
-       {
+        for ($i = 0; $i<$Count;$i++)
+        {
             $html.="<li ><a href='page-post.php?id=$i&Display=1'>";
             $html.=$this->connections->getCodeIndex($i)->getDisplay();
             $html.="</a ></li >";
-       }
+        }
 
         $html.=<<<HTML
 
@@ -104,7 +104,7 @@ HTML;
 
         </div>
 HTML;
-$html.=$this->headeradditional();
+        $html.=$this->headeradditional();
 
         $html.=<<<HTML
 </nav>
@@ -114,9 +114,11 @@ HTML;
 
 
 
-    return $html;
+        return $html;
     }
+
+
     private $Title;
     protected $connections;
 }
-
+?>

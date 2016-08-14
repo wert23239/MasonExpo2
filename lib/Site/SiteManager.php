@@ -19,8 +19,8 @@ class SiteManager
     const TractorDisplay="Tractor Show";
 
     //SlideShow are the folder where the slideshow is located
-    const CraftersSlideShow="CarShow";
-    const CarSlideShow="CraftShow";
+    const CraftersSlideShow="Crafters";
+    const CarSlideShow="CarShow";
     const MotorcycleSlideShow="None";
     const TractorSlideShow="TractorShow";
 
@@ -45,10 +45,10 @@ class SiteManager
 
 
     //Icon is what will display on the Main page
-    const CraftersIcon="";
-    const CarIcon="";
-    const MotorcycleIcon="";
-    const TractorIcon="";
+    const CraftersIcon="crafters.jpg";
+    const CarIcon="carshow.jpg";
+    const MotorcycleIcon="motorcycle.jpg";
+    const TractorIcon="tractor.jpg";
 
     //Num is the Number of which the icons will display (should be 8 total when there done)
     const CraftersNum=0;

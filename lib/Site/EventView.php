@@ -16,12 +16,17 @@ class EventView extends DynamicView
         $Display=$this->title;
         $id=$this->id;
         $images=$this->image;
+        shuffle($images);
         $html="";
+        $html.="<div id='slideshow'>";
         foreach($images as $image) {
             $html.=<<<HTML
-            <img src="$image"><br>
+            <div>
+            <img src="$image" height="400px" width="600px">
+            </div>
 HTML;
         }
+        $html.="</div>";
         $html.=<<<HTML
 
     <h1 class="CodeB"><strong>$Display</strong></h1>

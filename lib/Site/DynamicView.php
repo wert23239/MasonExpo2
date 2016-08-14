@@ -32,6 +32,7 @@ class DynamicView extends View
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="style/landing-page.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script>
 
 
@@ -42,12 +43,31 @@ $(function(){
     });
 });
 </script>
+<script>
+		$(function() {
+
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+
+		});
+</script>
 
 HTML;
 
         return $html;
     }
-
+    public function presentheader()
+    {
+        return parent::presentheader();
+    }
 
     public function presenthead()
     {
@@ -56,7 +76,29 @@ HTML;
 
     public function presentDisplay()
     {
+        $Count=$this->connections->getCount();
+        $html="";
 
+        $html.="<div class='container Main'>";
+        for ($i = 0; $i<$Count;$i++)
+        {
+            if($i%4==0)
+            {
+                $html.="<div class='row Main'>";
+            }
+            $Icon=$this->connections->getCodeIndex($i)->getIcon();
+            $html .= <<<HTML
+            <div class='col-xs-3 col-md-3'><a href='page-post.php?id=$i&Display=1' class='thumbnail' target='_blank'>
+            <img class='img-responsive box'  src='$Icon'/></a></div>
+HTML;
+
+            if($i%4==3)
+            {
+                $html.="</div>";
+            }
+        }
+        $html.="</div>";
+        return $html;
     }
 
 
