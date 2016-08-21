@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\DynamicView($site);
+$view= new Site\HomeView($site);
 ?>
 
 <!doctype html>
