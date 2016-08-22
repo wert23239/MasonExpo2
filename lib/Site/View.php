@@ -79,7 +79,6 @@ HTML;
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="vendors.html">Commercial Vendors</a></li>
 HTML;
 
         for ($i = 0; $i<$Count;$i++)
@@ -88,10 +87,7 @@ HTML;
             $html.=$this->connections->getCodeIndex($i)->getDisplay();
             $html.="</a ></li >";
         }
-
         $html.=<<<HTML
-
-                            <li><a href="sponsors.html">Sponsors</a></li>
                         </ul>
 
                 <div class="social">

@@ -13,48 +13,63 @@ class SiteManager
 {
 
     //Display is what will show up as the Page Title and Main Header on the page
+    const CommericalDisplay= "Commercial Vendors";
     const CraftersDisplay="Crafters";
     const CarDisplay="Car Show";
     const MotorcycleDisplay="Motorcycle Show";
     const TractorDisplay="Tractor Show";
+    const FireDisplay="Firefighter Show";
+    const MusicDisplay="Music Venue";
 
     //SlideShow are the folder where the slideshow is located
     const CraftersSlideShow="Crafters";
     const CarSlideShow="CarShow";
     const MotorcycleSlideShow="None";
     const TractorSlideShow="TractorShow";
+    const FireSlideShow="FireFighter";
+    const MusicSlideShow="MusicVenue";
 
     //Info is the link to the info tab of each page this is always a pdf
     const CraftersInfo="Crafters.png";
     const CarInfo="Cars.jpeg";
     const MotorcycleInfo="Motorcycle.jpeg";
     const TractorInfo="Tractor.jpeg";
+    const FireInfo="Firemancomp.jpg";
+    const MusicInfo="musicflier.jpg";
 
     //Forum is the signup tab link it is embedded google forum
     const CraftersForum="https://docs.google.com/forms/d/e/1FAIpQLScf62z7GBqhlVbDgHNOP2EZJkv90bBRqE9LqnsdeqouqRwlew/viewform?embedded=true";
     const CarForum="https://docs.google.com/forms/d/1_wTAd_RK3zp32WHtVB9NpAUKzgZDmQlrg9J8xusvsaI/viewform?embedded=true";
     const MotorcycleForum="https://docs.google.com/forms/d/e/1FAIpQLScdSMGs7GHSt6vEpLIox7CDpEiF4__PEpgnaKbZnlRRIHSENg/viewform?embedded=true";
     const TractorForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
-
+    const FireForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
+    const MusicForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
 
     //Map is largely still unknown end users still wants it should be a jpg
     const CraftersMap="";
     const CarMap="";
     const MotorcycleMap="";
     const TractorMap="";
-
+    const FireMap="";
+    const MusicMap="";
 
     //Icon is what will display on the Main page
+    const CommericalIcon="commercialvendorswebsite.jpg";
     const CraftersIcon="crafters.jpg";
     const CarIcon="carshow.jpg";
     const MotorcycleIcon="motorcycle.jpg";
     const TractorIcon="tractor.jpg";
+    const FireIcon="firefighter.jpg";
+    const MusicIcon="music.jpg";
 
-    //Num is the Number of which the icons will display (should be 8 total when there done)
-    const CraftersNum=0;
-    const CarNum=1;
-    const MotorcycleNum=2;
-    const TractorNum=3;
+    //Num is the Number of which the icons will display
+    const CommericalNum=0;
+    const CraftersNum=1;
+    const CarNum=2;
+    const MotorcycleNum=3;
+    const TractorNum=4;
+    const FireNum=5;
+    const MusicNum=6;
     
     const Total=4;
 
@@ -86,14 +101,13 @@ class SiteManager
 
     public function initialize(){
          $this->Code=array(
-             self::CraftersNum => new IndividualSite(self::CraftersNum,self::CraftersDisplay,self::CraftersSlideShow,self::CraftersInfo,
-                 self::CraftersForum,self::CraftersMap,self::CraftersIcon) ,
-             self::CarNum => new IndividualSite(self::CarNum,self::CarDisplay,self::CarSlideShow,self::CarInfo,
-                 self::CarForum,self::CarMap,self::CarIcon) ,
-             self::MotorcycleNum => new IndividualSite(self::MotorcycleNum,self::MotorcycleDisplay,self::MotorcycleSlideShow,self::MotorcycleInfo,
-                 self::MotorcycleForum,self::MotorcycleMap,self::MotorcycleIcon) ,
-             self::TractorNum => new IndividualSite(self::TractorNum,self::TractorDisplay,self::TractorSlideShow,self::TractorInfo,
-                 self::TractorForum,self::TractorMap,self::TractorIcon) ,
+             self::CommericalNum => new IndividualSite(self::CommericalNum, self::CommericalDisplay,self::CommericalIcon),
+             self::CraftersNum => new IndividualSite(self::CraftersNum, self::CraftersDisplay, self::CraftersIcon, self::CraftersSlideShow, self::CraftersInfo, self::CraftersForum, self::CraftersMap) ,
+             self::CarNum => new IndividualSite(self::CarNum, self::CarDisplay, self::CarIcon, self::CarSlideShow, self::CarInfo, self::CarForum, self::CarMap) ,
+             self::MotorcycleNum => new IndividualSite(self::MotorcycleNum, self::MotorcycleDisplay, self::MotorcycleIcon, self::MotorcycleSlideShow, self::MotorcycleInfo, self::MotorcycleForum, self::MotorcycleMap) ,
+             self::TractorNum => new IndividualSite(self::TractorNum, self::TractorDisplay, self::TractorIcon, self::TractorSlideShow, self::TractorInfo, self::TractorForum, self::TractorMap) ,
+             self::FireNum => new IndividualSite(self::FireNum, self::FireDisplay, self::FireIcon, self::FireSlideShow, self::FireInfo, self::FireForum, self::FireMap) ,
+             self::MusicNum => new IndividualSite(self::MusicNum, self::MusicDisplay, self::MusicIcon, self::MusicSlideShow, self::MusicInfo, self::MusicForum, self::MusicMap) ,
          );
         $this->total=sizeof($this->Code);
     }

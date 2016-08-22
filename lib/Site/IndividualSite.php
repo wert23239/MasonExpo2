@@ -16,7 +16,7 @@ class IndividualSite
     const IconPath = "Icon/";
     const namePath = "EventDisplay.php?id=";
 
-    public function __construct($number,$display,$slideShow, $info, $forum, $map,$icon)
+    public function __construct($number, $display, $icon, $slideShow = "NULL", $info = "", $forum = "", $map = "")
     {
         $this->name = self::namePath;
         $this->name .= $number;
