@@ -1,8 +1,9 @@
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #777;
-    background-color: #EEE;
+.navbar .brand, .navbar .nav > li > a {
+    color: darkgray;
+}
+.navbar .brand, .navbar .nav > li > a:hover {
+    color: white;
 }
 
 .social .fa-facebook:hover {
@@ -29,5 +30,9 @@
 }
 
 .carousel-inner{
-    background-color: ghostwhite;
+    background-color: white;
+}
+
+.navbar-default{
+    background-color: black;
 }

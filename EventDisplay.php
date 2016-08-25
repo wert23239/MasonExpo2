@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\EventView($site);
+$view = new Site\EventView($site);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,13 +8,12 @@ $view= new Site\EventView($site);
 
 <body class="project">
 
-
 <?php echo $view->presentheader();
 ?>
-<div class="jumbotron CodeA">
+
 <?php
-   echo $view->presentDisplay();
+echo $view->presentDisplay();
 ?>
-</div>
+
 </body>
 </html>
