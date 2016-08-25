@@ -29,7 +29,7 @@ class EventView extends DynamicView
     <h1><strong>$Display</strong></h1>
                         <ul class="page-list">
                             <li><a href="page-post.php?id=$id&Info=1">Info</a></li><br/>
-                            <li><a href="page-post.php?id=$id&form=1">Sign-up</a></li><br/>
+                            <li><a href="page-post.php?id=$id&Form=1">Sign-up</a></li><br/>
                             <li><a href="page-post.php?id=$id&Map=1">Map</a></li>
                         </ul>
 
