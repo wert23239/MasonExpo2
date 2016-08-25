@@ -37,13 +37,13 @@ class SiteManager
     const FireInfo="Firemancomp.jpg";
     const MusicInfo="Musicflier.jpg";
 
-    //Forum is the signup tab link it is embedded google forum
-    const CraftersForum="https://docs.google.com/forms/d/e/1FAIpQLScf62z7GBqhlVbDgHNOP2EZJkv90bBRqE9LqnsdeqouqRwlew/viewform?embedded=true";
-    const CarForum="https://docs.google.com/forms/d/1_wTAd_RK3zp32WHtVB9NpAUKzgZDmQlrg9J8xusvsaI/viewform?embedded=true";
-    const MotorcycleForum="https://docs.google.com/forms/d/e/1FAIpQLScdSMGs7GHSt6vEpLIox7CDpEiF4__PEpgnaKbZnlRRIHSENg/viewform?embedded=true";
-    const TractorForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
-    const FireForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
-    const MusicForum="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
+    //Form is the signup tab link it is embedded google form
+    const CraftersForm="https://docs.google.com/forms/d/e/1FAIpQLScf62z7GBqhlVbDgHNOP2EZJkv90bBRqE9LqnsdeqouqRwlew/viewform?embedded=true";
+    const CarForm="https://docs.google.com/forms/d/1_wTAd_RK3zp32WHtVB9NpAUKzgZDmQlrg9J8xusvsaI/viewform?embedded=true";
+    const MotorcycleForm="https://docs.google.com/forms/d/e/1FAIpQLScdSMGs7GHSt6vEpLIox7CDpEiF4__PEpgnaKbZnlRRIHSENg/viewform?embedded=true";
+    const TractorForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
+    const FireForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
+    const MusicForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
 
     //Map is largely still unknown end users still wants it should be a jpg
     const CraftersMap="";
@@ -102,12 +102,12 @@ class SiteManager
     public function initialize(){
          $this->Code=array(
              self::CommericalNum => new IndividualSite(self::CommericalNum, self::CommericalDisplay,self::CommericalIcon),
-             self::CraftersNum => new IndividualSite(self::CraftersNum, self::CraftersDisplay, self::CraftersIcon, self::CraftersSlideShow, self::CraftersInfo, self::CraftersForum, self::CraftersMap) ,
-             self::CarNum => new IndividualSite(self::CarNum, self::CarDisplay, self::CarIcon, self::CarSlideShow, self::CarInfo, self::CarForum, self::CarMap) ,
-             self::MotorcycleNum => new IndividualSite(self::MotorcycleNum, self::MotorcycleDisplay, self::MotorcycleIcon, self::MotorcycleSlideShow, self::MotorcycleInfo, self::MotorcycleForum, self::MotorcycleMap) ,
-             self::TractorNum => new IndividualSite(self::TractorNum, self::TractorDisplay, self::TractorIcon, self::TractorSlideShow, self::TractorInfo, self::TractorForum, self::TractorMap) ,
-             self::FireNum => new IndividualSite(self::FireNum, self::FireDisplay, self::FireIcon, self::FireSlideShow, self::FireInfo, self::FireForum, self::FireMap) ,
-             self::MusicNum => new IndividualSite(self::MusicNum, self::MusicDisplay, self::MusicIcon, self::MusicSlideShow, self::MusicInfo, self::MusicForum, self::MusicMap) ,
+             self::CraftersNum => new IndividualSite(self::CraftersNum, self::CraftersDisplay, self::CraftersIcon, self::CraftersSlideShow, self::CraftersInfo, self::CraftersForm, self::CraftersMap) ,
+             self::CarNum => new IndividualSite(self::CarNum, self::CarDisplay, self::CarIcon, self::CarSlideShow, self::CarInfo, self::CarForm, self::CarMap) ,
+             self::MotorcycleNum => new IndividualSite(self::MotorcycleNum, self::MotorcycleDisplay, self::MotorcycleIcon, self::MotorcycleSlideShow, self::MotorcycleInfo, self::MotorcycleForm, self::MotorcycleMap) ,
+             self::TractorNum => new IndividualSite(self::TractorNum, self::TractorDisplay, self::TractorIcon, self::TractorSlideShow, self::TractorInfo, self::TractorForm, self::TractorMap) ,
+             self::FireNum => new IndividualSite(self::FireNum, self::FireDisplay, self::FireIcon, self::FireSlideShow, self::FireInfo, self::FireForm, self::FireMap) ,
+             self::MusicNum => new IndividualSite(self::MusicNum, self::MusicDisplay, self::MusicIcon, self::MusicSlideShow, self::MusicInfo, self::MusicForm, self::MusicMap) ,
          );
         $this->total=sizeof($this->Code);
     }

@@ -15,7 +15,7 @@ class DynamicView extends View
         $this->id=$site->getId();
         $this->current=$this->connections->getCurrent();
         $this->title=$this->current->getDisplay();
-        $this->forum=$this->current->getForum();
+        $this->form=$this->current->getForm();
         $this->image=$this->current->getSlideShow();
         $this->info=$this->current->getInfo();
     }
@@ -83,7 +83,7 @@ HTML;
 
     protected $id="";
     protected $current;
-    protected $forum="";
+    protected $form="";
     protected $title="";
     protected $info="";
     protected $image="";

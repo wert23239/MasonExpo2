@@ -1,6 +1,6 @@
 <?php
 require 'lib/game.inc.php';
-$view= new Site\ForumView($site);
+$view= new Site\FormView($site);
 ?>
 <!DOCTYPE html>
 <html lang="en">

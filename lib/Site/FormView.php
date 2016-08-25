@@ -7,16 +7,16 @@
  */
 
 namespace Site;
-class ForumView extends DynamicView
+class FormView extends DynamicView
 {
 
     public function presentDisplay()
     {
         $id=$this->id;
-        $Forum=$this->forum;
+        $form=$this->form;
         $html=<<<HTML
     <div class="content-wrapper">
-        <iframe src=$Forum scrolling="no" height="1700">
+        <iframe src=$form scrolling="no" height="1700">
     </div>
 HTML;
         return $html;

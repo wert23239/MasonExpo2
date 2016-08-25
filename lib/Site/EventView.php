@@ -23,22 +23,21 @@ class EventView extends DynamicView
 
         $html .= <<<HTML
         
+    <div class="container">    
     <div class="row">
     <div class='col-md-4' id="page-header">
     <h1><strong>$Display</strong></h1>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
+                        <ul class="page-list">
                             <li><a href="page-post.php?id=$id&Info=1">Info</a></li><br/>
-                            <li><a href="page-post.php?id=$id&Forum=1">Sign-up</a></li><br/>
+                            <li><a href="page-post.php?id=$id&form=1">Sign-up</a></li><br/>
                             <li><a href="page-post.php?id=$id&Map=1">Map</a></li>
                         </ul>
 
     </div>
-    </div>
 
 HTML;
 
-        $html .="<div class='col-md-8' id='page-slideshow'>";
+        $html .= "<div class='col-md-8' id='page-slideshow'>";
         $html .= "<div id='slideshow'>";
         foreach ($images as $image) {
             $html .= <<<HTML
@@ -47,6 +46,7 @@ HTML;
             </div>
 HTML;
         }
+        $html .= "</div>";
         $html .= "</div>";
         $html .= "</div>";
         $html .= "</div>";

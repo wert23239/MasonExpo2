@@ -16,7 +16,7 @@ class IndividualSite
     const IconPath = "Icon/";
     const namePath = "EventDisplay.php?id=";
 
-    public function __construct($number, $display, $icon, $slideShow = "NULL", $info = "", $forum = "", $map = "")
+    public function __construct($number, $display, $icon, $slideShow = "NULL", $info = "", $form = "", $map = "")
     {
         $this->name = self::namePath;
         $this->name .= $number;
@@ -26,7 +26,7 @@ class IndividualSite
         $this->info = self::ImagePath;
         $this->info .= self::InfoPath;
         $this->info .= $info;
-        $this->forum = $forum;
+        $this->form = $form;
         $this->map=$map;
         $this->icon = self::ImagePath;
         $this->icon .= self::IconPath;
@@ -39,7 +39,7 @@ class IndividualSite
     private $display;
     private $slideShow=array();
     private $info;
-    private $forum;
+    private $form;
     private $map;
     private $icon;
 
@@ -135,17 +135,17 @@ class IndividualSite
     /**
      * @return mixed
      */
-    public function getForum()
+    public function getform()
     {
-        return $this->forum;
+        return $this->form;
     }
 
     /**
-     * @param mixed $forum
+     * @param mixed $form
      */
-    public function setForum($forum)
+    public function setForm($form)
     {
-        $this->forum = $forum;
+        $this->form = $form;
     }
 
     /**

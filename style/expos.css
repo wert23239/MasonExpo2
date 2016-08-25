@@ -7,6 +7,7 @@ body {
 
 .container {
     padding: 2em;
+    height: 500px;
 }
 
 a.thumbnail {
@@ -23,17 +24,6 @@ a.thumbnail {
     font-size: 100px;
 }
 
-.jumbotron {
-    font-family: 'FontAwesome', impact;
-    background-color: darkblue;
-}
-
-.jumbotron h1{
-    font-family: 'FontAwesome', impact;
-    text-align: left;
-    margin: 5%;
-    color: black;
-}
 
 .well {
     font-family: Forte, sans-serif;
@@ -51,6 +41,16 @@ a.thumbnail {
 
 .row {
     clear: both;
+}
+
+body{
+    background-color: #003459;
+    margin: 100px;
+    text-align: center;
+}
+
+.container{
+    background-color: #003459;
 }
 
 .footer {
@@ -135,14 +135,10 @@ iframe.map {
 }
 
 #page-header{
-    text-align: center;
+    text-align: left;
 }
 #page-slideshow{
     text-align: center;
-}
-
-.row{
-    background-color: red;
 }
 
 #address {
@@ -150,17 +146,22 @@ iframe.map {
 }
 
 #slideshow {
-    margin: 50px auto;
-    position: relative;
+    position: absolute;
     width: 240px;
     height: 240px;
-    padding: 10px;
 }
 
 #slideshow > div {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+    text-align: center;
+}
+
+.page-list{
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
 }
