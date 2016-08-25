@@ -30,12 +30,12 @@ class SiteManager
     const MusicSlideShow="MusicVenue";
 
     //Info is the link to the info tab of each page this is always a pdf
-    const CraftersInfo="Crafters.png";
-    const CarInfo="Cars.jpeg";
-    const MotorcycleInfo="Motorcycle.jpeg";
-    const TractorInfo="Tractor.jpeg";
+    const CraftersInfo="Crafters.jpg";
+    const CarInfo="Cars.jpg";
+    const MotorcycleInfo="Motorcycle.jpg";
+    const TractorInfo="Tractor.jpg";
     const FireInfo="Firemancomp.jpg";
-    const MusicInfo="musicflier.jpg";
+    const MusicInfo="Musicflier.jpg";
 
     //Forum is the signup tab link it is embedded google forum
     const CraftersForum="https://docs.google.com/forms/d/e/1FAIpQLScf62z7GBqhlVbDgHNOP2EZJkv90bBRqE9LqnsdeqouqRwlew/viewform?embedded=true";
