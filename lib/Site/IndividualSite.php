@@ -13,10 +13,11 @@ class IndividualSite
 {
     const InfoPath = "Info/";
     const ImagePath = "images/";
+    const LogoPath =  "Logo/";
     const IconPath = "Icon/";
     const namePath = "EventDisplay.php?id=";
 
-    public function __construct($number, $display, $icon, $slideShow = "NULL", $info = "", $form = "", $map = "")
+    public function __construct($number, $display, $icon, $slideShow = "NULL", $info = "", $form = "", $map = "", $Logo="", $LogoLink="")
     {
         $this->name = self::namePath;
         $this->name .= $number;
@@ -31,6 +32,10 @@ class IndividualSite
         $this->icon = self::ImagePath;
         $this->icon .= self::IconPath;
         $this->icon .= $icon;
+        $this->logo = self::ImagePath;
+        $this->logo .= self::LogoPath;
+        $this->logo .= $Logo;
+        $this->logoLink .= $LogoLink;
 
     }
 
@@ -42,6 +47,8 @@ class IndividualSite
     private $form;
     private $map;
     private $icon;
+    private $logo;
+    private $logoLink;
 
     /**
      * @return string
@@ -174,7 +181,15 @@ class IndividualSite
         $this->icon = $icon;
     }
 
+    public function getLogo()
+    {
+        return $this->logo;
+    }
 
+    public function getLogoLink()
+    {
+        return $this->logoLink;
+    }
 
 
 }
