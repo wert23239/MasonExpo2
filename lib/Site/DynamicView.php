@@ -18,6 +18,8 @@ class DynamicView extends View
         $this->form=$this->current->getForm();
         $this->image=$this->current->getSlideShow();
         $this->info=$this->current->getInfo();
+        $this->logo=$this->current->getLogo();
+        $this->logolink=$this->current->getLogoLink();
     }
     public function headadditional()
     {
@@ -83,4 +85,6 @@ HTML;
     protected $title="";
     protected $info="";
     protected $image="";
+    protected $logo="";
+    protected $logolink="";
 }

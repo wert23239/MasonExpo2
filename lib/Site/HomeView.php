@@ -31,7 +31,7 @@ class HomeView extends DynamicView
             }
             $Icon=$this->connections->getCodeIndex($i)->getIcon();
             $html .= <<<HTML
-            <div class='col-xs-3 col-md-3'><a href='page-post.php?id=$i&Display=1' class='thumbnail' target='_blank'>
+            <div class='col-xs-3 col-md-3'><a href='page-post.php?id=$i&Display=1' class='thumbnail'>
             <img class='img-responsive box'  src='$Icon'/></a></div>
 HTML;
 

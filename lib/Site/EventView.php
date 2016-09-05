@@ -16,6 +16,8 @@ class EventView extends DynamicView
         $Display = $this->title;
         $id = $this->id;
         $images = $this->image;
+        $logo = $this->logo;
+        $logolink= $this->logolink;
         shuffle($images);
 
 
@@ -34,8 +36,15 @@ class EventView extends DynamicView
                         </ul>
 
     </div>
-
+    <div>
 HTML;
+    if($logolink!="" and $logo!="")
+    {
+        $html .= "<a href='$logolink'><img src='$logo'></a>";
+    }
+    $html.="</div>";
+
+
 
         $html .= "<div class='col-md-8' id='page-slideshow'>";
         $html .= "<div id='slideshow'>";
