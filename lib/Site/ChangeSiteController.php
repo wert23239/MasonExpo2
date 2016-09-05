@@ -32,7 +32,15 @@ class ChangeSiteController{
             $this->result = json_encode(array('ok' => true,'NewProject'=> $view->presentDisplay(),'Source'=> $view->getSource()));
         }
         else if(isset($request['Display'])){
-            $this->page="EventDisplay.php";
+            if($this->id==0)
+            {
+                $this->page="VendorEventDisplay.php";
+            }
+            else
+            {
+                $this->page="EventDisplay.php";
+            }
+
         }
         else if(isset($request['Info'])){
             $this->page="InfoDisplay.php";
