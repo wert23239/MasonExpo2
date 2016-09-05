@@ -113,6 +113,12 @@ HTML;
         return $html;
     }
 
+    public function presentGoBack(){
+        $html = '<a href="javascript:history.back()">Go Back</a>';
+
+        return $html;
+    }
+
 
     private $Title;
     protected $connections;

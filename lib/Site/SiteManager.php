@@ -28,6 +28,7 @@ class SiteManager
     const TractorSlideShow="TractorShow";
     const FireSlideShow="FireFighter";
     const MusicSlideShow="MusicVenue";
+    const CommercialSlideShow="Vendors";
 
     //Info is the link to the info tab of each page this is always a pdf
     const CraftersInfo="Crafters.jpg";
@@ -101,7 +102,7 @@ class SiteManager
 
     public function initialize(){
          $this->Code=array(
-             self::CommericalNum => new IndividualSite(self::CommericalNum, self::CommericalDisplay,self::CommericalIcon),
+             self::CommericalNum => new IndividualSite(self::CommericalNum, self::CommericalDisplay,self::CommericalIcon, self::CommercialSlideShow),
              self::CraftersNum => new IndividualSite(self::CraftersNum, self::CraftersDisplay, self::CraftersIcon, self::CraftersSlideShow, self::CraftersInfo, self::CraftersForm, self::CraftersMap) ,
              self::CarNum => new IndividualSite(self::CarNum, self::CarDisplay, self::CarIcon, self::CarSlideShow, self::CarInfo, self::CarForm, self::CarMap) ,
              self::MotorcycleNum => new IndividualSite(self::MotorcycleNum, self::MotorcycleDisplay, self::MotorcycleIcon, self::MotorcycleSlideShow, self::MotorcycleInfo, self::MotorcycleForm, self::MotorcycleMap) ,
