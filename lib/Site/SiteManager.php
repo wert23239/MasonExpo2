@@ -63,6 +63,19 @@ class SiteManager
     const FireIcon="firefighter.jpg";
     const MusicIcon="music.jpg";
 
+    const CarLogo="Liskeys.png";
+    const MotorcycleLogo="FirstDue.png";
+    const TractorLogo="DGEquipment.png";
+    const FireLogo="FirstDue.png";
+    const MusicLogo="Century21.png";
+
+    const CarLogoLink="http://liskeys.com/";
+    const MotorcycleLogoLink="http://www.firstduefiresupply.com/";
+    const TractorLogoLink="http://www.dgequipment.com/";
+    const FireLogoLink="http://www.firstduefiresupply.com/";
+    const MusicLogoLink="http://www.century21.com/";
+
+
     //Num is the Number of which the icons will display
     const CommericalNum=0;
     const CraftersNum=1;
@@ -104,11 +117,11 @@ class SiteManager
          $this->Code=array(
              self::CommericalNum => new IndividualSite(self::CommericalNum, self::CommericalDisplay,self::CommericalIcon, self::CommercialSlideShow),
              self::CraftersNum => new IndividualSite(self::CraftersNum, self::CraftersDisplay, self::CraftersIcon, self::CraftersSlideShow, self::CraftersInfo, self::CraftersForm, self::CraftersMap) ,
-             self::CarNum => new IndividualSite(self::CarNum, self::CarDisplay, self::CarIcon, self::CarSlideShow, self::CarInfo, self::CarForm, self::CarMap) ,
-             self::MotorcycleNum => new IndividualSite(self::MotorcycleNum, self::MotorcycleDisplay, self::MotorcycleIcon, self::MotorcycleSlideShow, self::MotorcycleInfo, self::MotorcycleForm, self::MotorcycleMap) ,
-             self::TractorNum => new IndividualSite(self::TractorNum, self::TractorDisplay, self::TractorIcon, self::TractorSlideShow, self::TractorInfo, self::TractorForm, self::TractorMap) ,
-             self::FireNum => new IndividualSite(self::FireNum, self::FireDisplay, self::FireIcon, self::FireSlideShow, self::FireInfo, self::FireForm, self::FireMap) ,
-             self::MusicNum => new IndividualSite(self::MusicNum, self::MusicDisplay, self::MusicIcon, self::MusicSlideShow, self::MusicInfo, self::MusicForm, self::MusicMap) ,
+             self::CarNum => new IndividualSite(self::CarNum, self::CarDisplay, self::CarIcon, self::CarSlideShow, self::CarInfo, self::CarForm, self::CarMap,self::CarLogo,self::CarLogoLink) ,
+             self::MotorcycleNum => new IndividualSite(self::MotorcycleNum, self::MotorcycleDisplay, self::MotorcycleIcon, self::MotorcycleSlideShow, self::MotorcycleInfo, self::MotorcycleForm, self::MotorcycleMap,self::MotorcycleLogo,self::MotorcycleLogoLink) ,
+             self::TractorNum => new IndividualSite(self::TractorNum, self::TractorDisplay, self::TractorIcon, self::TractorSlideShow, self::TractorInfo, self::TractorForm, self::TractorMap,self::TractorLogo,self::TractorLogoLink) ,
+             self::FireNum => new IndividualSite(self::FireNum, self::FireDisplay, self::FireIcon, self::FireSlideShow, self::FireInfo, self::FireForm, self::FireMap, self::FireLogo, self::FireLogoLink) ,
+             self::MusicNum => new IndividualSite(self::MusicNum, self::MusicDisplay, self::MusicIcon, self::MusicSlideShow, self::MusicInfo, self::MusicForm, self::MusicMap, self::MusicLogo,self::MusicLogoLink) ,
          );
         $this->total=sizeof($this->Code);
     }
