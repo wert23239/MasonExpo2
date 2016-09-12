@@ -23,14 +23,31 @@ class DynamicView extends View
     }
     public function headadditional()
     {
+        return <<<HTML
+    <link href="style/navbar.css" rel="stylesheet">
+    <link href="style/forms.css" rel="stylesheet">
+    <link href="style/expos.css" rel="stylesheet">
+    <link href="style/landing-page.css" rel="stylesheet">
+HTML;
+    }
+
+    public function presenthead()
+    {
     $title=$this->title;
-    $html=<<<HTML
+    $html="";
+    $html.=<<<HTML
+    <head>
     <title>MasonExpo | $title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nothing quite like the Mason Expo.">
-    <link rel="stylesheet" href="style/landing-page.css">
+    <link href="node_modules/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+HTML;
+    $html.=$this->headadditional();
+    $html.=<<<HTML
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="jslib/header.js"></script>
+    <script src="typed.js"></script>
 <script>
 
 
@@ -57,7 +74,7 @@ $(function(){
 
 		});
 </script>
-
+</head>
 HTML;
 
         return $html;
@@ -67,10 +84,6 @@ HTML;
         return parent::presentheader();
     }
 
-    public function presenthead()
-    {
-        return parent::presenthead();
-    }
 
     public function presentDisplay()
     {
