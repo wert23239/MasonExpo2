@@ -20,6 +20,7 @@ class DynamicView extends View
         $this->info=$this->current->getInfo();
         $this->logo=$this->current->getLogo();
         $this->logolink=$this->current->getLogoLink();
+        $this->map=$this->current->getMap();
     }
     public function headadditional()
     {
@@ -100,4 +101,5 @@ HTML;
     protected $image="";
     protected $logo="";
     protected $logolink="";
+    protected $map="";
 }

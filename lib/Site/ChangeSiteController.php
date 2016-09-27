@@ -49,7 +49,7 @@ class ChangeSiteController{
             $this->page="FormDisplay.php";
         }
         else if(isset($request['Map'])){
-            $this->page="EventDisplay.php";
+            $this->page="MapDisplay.php";
         }
 
 

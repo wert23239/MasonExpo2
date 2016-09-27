@@ -46,13 +46,13 @@ class SiteManager
     const FireForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
     const MusicForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
 
-    //Map is largely still unknown end users still wants it should be a jpg
-    const CraftersMap="";
-    const CarMap="";
-    const MotorcycleMap="";
-    const TractorMap="";
-    const FireMap="";
-    const MusicMap="";
+    //Map is a pdf of the give location
+    const CraftersMap="2016Map.pdf";
+    const CarMap="2016Map.pdf";
+    const MotorcycleMap="2016Map.pdf";
+    const TractorMap="2016Map.pdf";
+    const FireMap="2016Map.pdf";
+    const MusicMap="2016Map.pdf";
 
     //Icon is what will display on the Main page
     const CommericalIcon="commercialvendorswebsite.jpg";

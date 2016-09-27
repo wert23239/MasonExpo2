@@ -15,6 +15,7 @@ class IndividualSite
     const ImagePath = "images/";
     const LogoPath =  "Logo/";
     const IconPath = "Icon/";
+    const MapPath = "Map/";
     const namePath = "EventDisplay.php?id=";
 
     public function __construct($number, $display, $icon, $slideShow = "NULL", $info = "", $form = "", $map = "", $Logo="", $LogoLink="")
@@ -29,6 +30,7 @@ class IndividualSite
         $this->info .= $info;
         $this->form = $form;
         $this->map=$map;
+        $this->map.=$map;
         $this->icon = self::ImagePath;
         $this->icon .= self::IconPath;
         $this->icon .= $icon;
