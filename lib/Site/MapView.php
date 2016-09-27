@@ -7,7 +7,7 @@
  */
 
 namespace Site;
-class InfoView extends DynamicView
+class MapView extends DynamicView
 {
 
     public function presentDisplay()
