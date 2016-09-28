@@ -47,12 +47,12 @@ class SiteManager
     const MusicForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
 
     //Map is a pdf of the give location
-    const CraftersMap="2016Map.pdf";
-    const CarMap="2016Map.pdf";
-    const MotorcycleMap="2016Map.pdf";
-    const TractorMap="2016Map.pdf";
-    const FireMap="2016Map.pdf";
-    const MusicMap="2016Map.pdf";
+    const CraftersMap="2016map.jpg";
+    const CarMap="2016map.jpg";
+    const MotorcycleMap="2016map.jpg";
+    const TractorMap="2016map.jpg";
+    const FireMap="2016map.jpg";
+    const MusicMap="2016map.jpg";
 
     //Icon is what will display on the Main page
     const CommericalIcon="commercialvendorswebsite.jpg";

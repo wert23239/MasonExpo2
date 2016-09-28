@@ -29,7 +29,8 @@ class IndividualSite
         $this->info .= self::InfoPath;
         $this->info .= $info;
         $this->form = $form;
-        $this->map=$map;
+        $this->map=self::ImagePath;
+        $this->map.=self::MapPath;
         $this->map.=$map;
         $this->icon = self::ImagePath;
         $this->icon .= self::IconPath;

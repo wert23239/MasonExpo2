@@ -12,8 +12,8 @@ class MapView extends DynamicView
 
     public function presentDisplay()
     {
-        $id=$this->id;
         $Map=$this->map;
+
         $html=<<<HTML
     <p><img src=$Map id="image" height="320px" class="img-responsive center-block"></p>
 HTML;
