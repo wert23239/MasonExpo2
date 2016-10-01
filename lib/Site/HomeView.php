@@ -36,8 +36,15 @@ class HomeView extends DynamicView
             {
                 $Icon=$this->connections->getCodeIndex($i)->getIcon();
                 $html .= <<<HTML
-                <div class='col-xs-4 col-md-4'><a href='page-post.php?id=$i&Display=1' class='thumbnail'>
-                <img class='img-responsive box'  src='$Icon'/></a></div>
+                <div class='col-xs-4 col-md-4'>
+                <div class="hovereffect">
+                    <img class='img-responsive'  src='$Icon'/>
+                    <div class="overlay">
+                        <!--<h2>Hover effect 3</h2>-->
+                        <a class="info" href='page-post.php?id=$i&Display=1' class='thumbnail'> Go to Event</a>
+                    </div>
+                </div>
+        </div>
 
 HTML;
             }
@@ -66,15 +73,16 @@ HTML;
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6 col-xs-8 text-left-cust">June 24th</div>
-    <div class="col-md-6 col-xs-4 text-right-cust">2017</div>
+    <div class="col-md-6 col-xs-8 text-left-cust fadeInLeft animated">June 24th</div>
+    <div class="col-md-6 col-xs-4 text-right-cust fadeInRight animated">2017</div>
   </div>
 </div>
 <br>
-<h1 class="modal-title">Outdoor Expo & More!</h1>
-<img class='img-responsive center-block'  src='images/Logo/LaFontaine.png'/></a></div>
+<h1 class="modal-title lightSpeedIn animated">Outdoor Expo & More!</h1>
+<a href="http://www.familydeal.com/"><img class='img-responsive center-block'  src='images/Logo/LaFontaine.png'/></a></div>
 
 <br>
+<h1 class="Events">Events:</h1>
 <!--<pre >-->
 <!--Sat June 27th 2017-->
 <!--Ingham County Fairgrounds-->
