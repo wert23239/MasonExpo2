@@ -27,7 +27,7 @@ class HomeView extends DynamicView
         $html.="<div class='container Main'>";
         for ($i = 0; $i<$Count;$i++)
         {
-            if($i%4==0)
+            if($i%3==0)
             {
                 $html.="<div class='row Main'>";
             }
@@ -36,7 +36,7 @@ class HomeView extends DynamicView
             {
                 $Icon=$this->connections->getCodeIndex($i)->getIcon();
                 $html .= <<<HTML
-                <div class='col-xs-3 col-md-3'><a href='page-post.php?id=$i&Display=1' class='thumbnail'>
+                <div class='col-xs-4 col-md-4'><a href='page-post.php?id=$i&Display=1' class='thumbnail'>
                 <img class='img-responsive box'  src='$Icon'/></a></div>
 
 HTML;
@@ -46,12 +46,12 @@ HTML;
                 $Logo=$this->connections->getCodeIndex($i)->getLogo();
                 $LogoLink=$this->connections->getCodeIndex($i)->getLogoLink();
                 $html .= <<<HTML
-                <div class='col-xs-3 col-md-3'><a href='$LogoLink' class='thumbnail'>
+                <div class='col-xs-4 col-md-4'><a href='$LogoLink' class='thumbnail'>
                 <img class='img-responsive box'  src='$Logo'/></a></div>
 
 HTML;
             }
-            if($i%4==3)
+            if($i%3==2)
             {
                 $html.="</div>";
             }
@@ -63,23 +63,27 @@ HTML;
     public function presentTitle()
     {
         $html= <<<HTML
-<span class="text-left">June 24th</span>
-<span class="text-right">2017</span>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-xs-8 text-left-cust">June 24th</div>
+    <div class="col-md-6 col-xs-4 text-right-cust">2017</div>
+  </div>
+</div>
 <br>
 <h1 class="modal-title">Outdoor Expo & More!</h1>
-HTML;
-        $html.= $this->presentImages("Logos");
-        $html.= <<<HTML
+<img class='img-responsive center-block'  src='images/Logo/LaFontaine.png'/></a></div>
 
-<pre >
-Sat June 27th 2017
-Ingham County Fairgrounds
-700 E Ash  Mason, MI 48854
+<br>
+<!--<pre >-->
+<!--Sat June 27th 2017-->
+<!--Ingham County Fairgrounds-->
+<!--700 E Ash  Mason, MI 48854-->
 
-outdoorexpoandmore@gmail.com
+<!--outdoorexpoandmore@gmail.com-->
 
-517-204-3854
-</pre>
+<!--517-204-3854-->
+<!--</pre>-->
 <!--<div class="row">-->
     <!--<div class="col-lg-12">-->
         <!--<div class="intro-message">-->

@@ -21,7 +21,6 @@ class DynamicView extends View
         $this->logo=$this->current->getLogo();
         $this->logolink=$this->current->getLogoLink();
         $this->map=$this->current->getMap();
-        var_dump($this->map);
     }
     public function headadditional()
     {
