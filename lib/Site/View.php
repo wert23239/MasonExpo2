@@ -80,11 +80,11 @@ class View
 //
 //
 //
-//        return $html;
-//    }
-//
-//    public function presentGoBack(){
-//        $html = '<a href="javascript:history.back()">Go Back</a>';
+        return "";
+    }
+
+   public function presentGoBack(){
+       $html = '<a href="javascript:history.back()">Go Back</a>';
 
         return $html="";
     }

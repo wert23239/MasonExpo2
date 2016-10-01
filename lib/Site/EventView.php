@@ -24,10 +24,8 @@ class EventView extends DynamicView
         $html = "";
 
         $html .= <<<HTML
-        
-    <div class="container">    
-    <div class="row">
-    <div class='col-md-4' id="page-header">
+
+    <div class="container flex">
     <h1><strong>$Display</strong></h1>
                         <ul class="page-list">
                             <li><a href="page-post.php?id=$id&Info=1">Info</a></li><br/>
@@ -35,7 +33,6 @@ class EventView extends DynamicView
                             <li><a href="page-post.php?id=$id&Map=1">Map</a></li>
                         </ul>
 
-    </div>
     <div>
 HTML;
     if($logolink!="" and $logo!="")
@@ -58,7 +55,8 @@ HTML;
         $html .= "</div>";
         $html .= "</div>";
         $html .= "</div>";
-        $html .= "</div>";
+        $html .= "</div><br><br><br>";
+
         return $html;
     }
 }

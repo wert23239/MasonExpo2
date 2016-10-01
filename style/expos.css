@@ -191,6 +191,39 @@ ul{
 }
 
 
+.EventView
+{
+    overflow: hidden;
+
+}
+
+.flex
+{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Hover Css*/
 .hovereffect {
     width: 100%;
