@@ -25,44 +25,24 @@ class HomeView extends DynamicView
         $html="";
 
         $html.="<div class='container Main'>";
-        for ($i = 0; $i<$Count;$i++)
-        {
-            if($i%3==0)
-            {
-                $html.="<div class='row Main'>";
-            }
-
-            if($type=="events")
-            {
-                $Icon=$this->connections->getCodeIndex($i)->getIcon();
-                $html .= <<<HTML
-                <div class='col-xs-4 col-md-4'>
+        $html.="<div class='row'>";
+        for ($i = 0; $i<$Count;$i++) {
+            $Icon = $this->connections->getCodeIndex($i)->getIcon();
+            $html .= <<<HTML
+        <a href='page-post.php?id=$i&Display=1'>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="hovereffect">
                     <img class='img-responsive'  src='$Icon'/>
                     <div class="overlay">
                         <!--<h2>Hover effect 3</h2>-->
-                        <a class="info" href='page-post.php?id=$i&Display=1' class='thumbnail'> Go to Event</a>
+                        <a class="info" href='page-post.php?id=$i&Display=1'> Go to Event</a>
                     </div>
                 </div>
         </div>
-
+        </a>
 HTML;
-            }
-            else
-            {
-                $Logo=$this->connections->getCodeIndex($i)->getLogo();
-                $LogoLink=$this->connections->getCodeIndex($i)->getLogoLink();
-                $html .= <<<HTML
-                <div class='col-xs-4 col-md-4'><a href='$LogoLink' class='thumbnail'>
-                <img class='img-responsive box'  src='$Logo'/></a></div>
-
-HTML;
-            }
-            if($i%3==2)
-            {
-                $html.="</div>";
-            }
         }
+        $html.="</div>";
         $html.="</div>";
         return $html;
     }
