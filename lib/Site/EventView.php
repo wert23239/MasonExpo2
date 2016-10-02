@@ -26,6 +26,7 @@ class EventView extends DynamicView
         $html .= <<<HTML
 
     <div class="container flex">
+    <div class="nav-flex">
     <h1><strong>$Display</strong></h1>
                         <ul class="page-list">
                             <li><a href="page-post.php?id=$id&Info=1">Info</a></li><br/>
@@ -33,7 +34,8 @@ class EventView extends DynamicView
                             <li><a href="page-post.php?id=$id&Map=1">Map</a></li>
                         </ul>
 
-    <div>
+    <!--</div>-->
+    <!--<div class="flex-column">-->
 HTML;
     if($logolink!="" and $logo!="")
     {
@@ -43,19 +45,20 @@ HTML;
 
 
 
-        $html .= "<div class='col-md-8' id='page-slideshow'>";
-        $html .= "<div id='slideshow'>";
-        foreach ($images as $image) {
-            $html .= <<<HTML
-            <div>
-            <img src="$image" height="400px" width="600px">
-            </div>
-HTML;
-        }
-        $html .= "</div>";
-        $html .= "</div>";
-        $html .= "</div>";
-        $html .= "</div><br><br><br>";
+//        $html .= "<div class='col-md-8' id='page-slideshow'>";
+//        $html .= "<div id='slideshow'>";
+//        foreach ($images as $image) {
+//            $html .= <<<HTML
+//            <div>
+//            <img src="$image" height="400px" width="600px">
+//            </div>
+//HTML;
+//        }
+//        $html .= "</div>";
+//        $html .= "</div>";
+//        $html .= "</div>";
+        $html.="</div>";
+        $html .= "<br><br><br>";
 
         return $html;
     }

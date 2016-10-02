@@ -72,18 +72,6 @@ HTML;
 
 <!--517-204-3854-->
 <!--</pre>-->
-<!--<div class="row">-->
-    <!--<div class="col-lg-12">-->
-        <!--<div class="intro-message">-->
-                <!--<h1 class="special"></h1>-->
-                <!--<h3>Entry Time: 10am - 5pm </h3>-->
-                <!--<h3>Cost: $40</h3>-->
-                <!--<h3><strong>Saturday, June 25, 2016</strong></h3>-->
-                <!--<h3>Ingham County Fairgrounds 700 E Ash St. Mason, MI 48854</h3>-->
-                <!--<h4> <strong>For more information, please call Jessy at 517-281-0092 or email to <a href="outdoorexpoandmore@gmail.com">outdoorexpoandmore@gmail.com</a></strong></h4>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 HTML;
         return $html;
     }

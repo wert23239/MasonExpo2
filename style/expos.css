@@ -83,13 +83,25 @@ ul{
     padding: 0;
 }
 
-.text-left-cust , .text-right-cust
+.text-left-cust , .text-right-cust , .page-list>li>a
 {
-    font-size: 10em;
     color: #E9F1F7;
     padding: 1em 1em 0 1em;
     font-family: 'Concert One', cursive;
 }
+
+
+.page-list
+{
+    font-size: 2em;
+}
+
+
+.text-left-cust , .text-right-cust
+{
+    font-size: 10em;
+}
+
 
 .text-left-cust
 {
@@ -193,13 +205,22 @@ ul{
 
 .EventView
 {
-    overflow: hidden;
+    overflow-y: hidden;
 
 }
 
 .flex
 {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-flex {
+    width: 200px;
+}
+.flex-column {
+    -webkit-flex: 1;
+    flex: 1;
 }
 
 
