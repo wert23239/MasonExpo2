@@ -7,10 +7,9 @@ $view= new Site\InfoView($site);
 <?php echo $view->presenthead() ?>
 
 <body class="project">
-
+<?php echo $view->presentGoBack(); ?>
 <?php echo $view->presentDisplay(); ?>
 
-<?php echo $view->presentGoBack(); ?>
 
 </body>
 </html>

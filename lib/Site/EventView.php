@@ -45,12 +45,12 @@ HTML;
 
 
 
-        $html .= "<div class='col-md-8' id='page-slideshow'>";
+        $html .= "<div class='col-lg-8' id='page-slideshow'>";
         $html .= "<div id='slideshow'>";
         foreach ($images as $image) {
             $html .= <<<HTML
             <div>
-            <img src="$image" height="400px" width="600px">
+            <img src="$image" class="img-responsive">
             </div>
 HTML;
         }

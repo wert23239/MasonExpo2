@@ -9,10 +9,10 @@ $view= new Site\FormView($site);
 <body class="project">
 
 
-<?php echo $view->presentheader();
-?>
+
 <?php
-   echo $view->presentDisplay();
+echo $view->presentGoBack();
+echo $view->presentDisplay();
 ?>
 </body>
 </html>
