@@ -7,7 +7,7 @@ $view = new Site\EventView($site);
 <?php echo $view->presenthead() ?>
 
 <body class="EventView">
-
+<?php echo $view->presentGoBack() ?>
 <?php echo $view->presentheader();
 ?>
 

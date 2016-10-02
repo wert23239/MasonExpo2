@@ -24,7 +24,7 @@ class HomeView extends DynamicView
         $Count=$this->connections->getCount();
         $html="";
 
-        $html.="<div class='container Main'>";
+        $html.="<div class='container Main' id='Events'> ";
         $html.="<div class='row'>";
         for ($i = 0; $i<$Count;$i++) {
             $Icon = $this->connections->getCodeIndex($i)->getIcon();

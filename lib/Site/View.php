@@ -84,11 +84,19 @@ class View
     }
 
    public function presentGoBack(){
-       $html = '<a href="javascript:history.back()">Go Back</a>';
+       $html = "<div class='block'>";
+       $html .= $this->presentGoHome();
+       $html .= "<a href='javascript:history.back()'><button  class='btn btn-info'>Go Back</button></a>";
+       $html .= '</div>';
 
-        return $html="";
+        return $html;
     }
 
+    public function presentGoHome(){
+        $html = '<a href="http://webdev.cse.msu.edu/~lambe168/MasonExpo2/#Events"><button  class="btn btn-info">Home</button></a>';
+
+        return $html;
+    }
 
     private $Title;
     protected $connections;

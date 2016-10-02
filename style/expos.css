@@ -124,6 +124,13 @@ ul{
 }
 
 
+.block
+{
+    display: block;
+    text-align: center;
+}
+
+
 @media (max-width:2000px)
 {
 
