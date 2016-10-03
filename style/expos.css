@@ -213,7 +213,13 @@ ul{
 .EventView
 {
     overflow-y: hidden;
+    min-height: 100vh;
 
+}
+
+.project
+{
+    min-height: 100vh;
 }
 
 .flex
