@@ -16,10 +16,13 @@ class FormView extends DynamicView
     {
         $id=$this->id;
         $form=$this->form;
+//         $html=<<<HTML
+//    <div class="content-wrapper">
+//        <iframe src=$form scrolling="no" height="1700">
+//    </div>
+//HTML;
         $html=<<<HTML
-    <div class="content-wrapper">
-        <iframe src=$form scrolling="no" height="1700">
-    </div>
+    <p class="text-center modal-title form"><a href="$form" target="_blank">Google Form</a></p>
 HTML;
         return $html;
     }

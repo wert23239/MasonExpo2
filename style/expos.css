@@ -5,6 +5,7 @@
 @import 'https://fonts.googleapis.com/css?family=Baloo+Thambi';
 @import 'https://fonts.googleapis.com/css?family=Concert+One';
 @import 'https://fonts.googleapis.com/css?family=Trocchi';
+@import 'https://fonts.googleapis.com/css?family=Lora';
 body {
     padding: 40px 0 0 0;
     margin: 0 0 0 0;
@@ -87,7 +88,7 @@ ul{
 {
     color: #E9F1F7;
     padding: 1em 1em 0 1em;
-    font-family: 'Concert One', cursive;
+    font-family: 'Lora', serif;
 }
 
 
@@ -194,7 +195,7 @@ ul{
 
 .Events
 {
-    font-family: 'Concert One', cursive;
+    font-family: 'Lora', serif;
     text-align: center;
     font-size: 7em;
     margin: 0;
@@ -236,7 +237,10 @@ ul{
     flex: 1;
 }
 
-
+.form>a
+{
+   color:  darkblue;
+}
 
 
 

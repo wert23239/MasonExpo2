@@ -39,10 +39,10 @@ class SiteManager
     const MusicInfo="Musicflier.jpg";
 
     //Form is the signup tab link it is embedded google form
-    const CraftersForm="https://docs.google.com/forms/d/e/1FAIpQLScf62z7GBqhlVbDgHNOP2EZJkv90bBRqE9LqnsdeqouqRwlew/viewform?embedded=true";
-    const CarForm="https://docs.google.com/forms/d/1_wTAd_RK3zp32WHtVB9NpAUKzgZDmQlrg9J8xusvsaI/viewform?embedded=true";
-    const MotorcycleForm="https://docs.google.com/forms/d/e/1FAIpQLScdSMGs7GHSt6vEpLIox7CDpEiF4__PEpgnaKbZnlRRIHSENg/viewform?embedded=true";
-    const TractorForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
+    const CraftersForm="https://goo.gl/forms/pzSvmdlac0QDjmSx1";
+    const CarForm="https://goo.gl/forms/5hwqC3Xxn9cUtVN42";
+    const MotorcycleForm="https://goo.gl/forms/i9afMRjJrx33kDnD3";
+    const TractorForm="https://goo.gl/forms/5A1McvljqTlDo5xr1";
     const FireForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
     const MusicForm="https://docs.google.com/forms/d/e/1FAIpQLScV4zsYMg9Myrv6dYV9PcDCv1EcA3PRGwYp8v7zz0gJosWV9w/viewform?embedded=true";
 
