@@ -20,7 +20,7 @@ class ChangeSiteController{
         // Handle request.
         //
 
-        $this->id = 0;
+        $this->id = 1;
         if(isset($request['id'])){
             $this->id=$request['id'];
             $site->setId($this->id);

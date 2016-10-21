@@ -50,7 +50,7 @@ HTML;
         foreach ($images as $image) {
             $html .= <<<HTML
             <div>
-            <img src="$image" height="400px" width="600px">
+            <img src="$image" height="200px" width="300px">
             </div>
 HTML;
         }
