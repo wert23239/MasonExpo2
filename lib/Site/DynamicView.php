@@ -92,6 +92,10 @@ HTML;
         return $html;
     }
 
+    public function getForm()
+    {
+        return $this->form;
+    }
 
     protected $id="";
     protected $current;

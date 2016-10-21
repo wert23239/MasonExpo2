@@ -45,9 +45,6 @@ class ChangeSiteController{
         else if(isset($request['Info'])){
             $this->page="InfoDisplay.php";
         }
-        else if(isset($request['Form'])){
-            $this->page="FormDisplay.php";
-        }
         else if(isset($request['Map'])){
             $this->page="MapDisplay.php";
         }
