@@ -1,6 +1,4 @@
 @import url("normalize.css");
-@import url("navbar.css");
-@import url("animate.css");
 @import 'https://fonts.googleapis.com/css?family=Lalezar';
 @import 'https://fonts.googleapis.com/css?family=Baloo+Thambi';
 @import 'https://fonts.googleapis.com/css?family=Concert+One';
@@ -28,13 +26,7 @@ html { font-size: 100% }
 }
 
 body{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,21a4b2+50,515796+100 */
-    background: #1e5799; /* Old browsers */
-    background: -moz-linear-gradient(top,  #1e5799 0%, #21a4b2 50%, #515796 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #1e5799 0%,#21a4b2 50%,#515796 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #1e5799 0%,#21a4b2 50%,#515796 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#515796',GradientType=0 ); /* IE6-9 */
-
+    background: red;
 }
 
 .footer {
