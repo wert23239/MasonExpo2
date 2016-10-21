@@ -14,23 +14,19 @@ class VendorEventView extends DynamicView
     public function presentDisplay()
     {
         $images = $this->image;
+        $i = 0;
         $html="";
         $html.="<div class='container Main'>";
         foreach ($images as $logo)
         {
-            //if($i%4==0)
-            //{
-            //    $html.="<div class='row Main'>";
-            //}
+            $i += 1;
             $html .= <<<HTML
             <div class='col-xs-3 col-md-3'>
             <img class='img-responsive'  src='$logo'/></div>
-HTML;
 
-            //if($i%4==3)
-            //{
-             //   $html.="</div>";
-            //}
+HTML;
+            $i += 1;
+
         }
         $html.="</div>";
 

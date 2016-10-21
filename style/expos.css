@@ -26,7 +26,7 @@ html { font-size: 100% }
 }
 
 body{
-    background: red;
+    background: #2F4172;
 }
 
 .footer {
@@ -66,7 +66,7 @@ body{
     text-align: center;
 }
 
-.page-list{
+.page-list >li>a {
     text-align: left;
     list-style-type: none;
     padding: 0;
@@ -79,10 +79,12 @@ ul{
 .text-left-cust , .text-right-cust , .page-list>li>a
 {
     color: #E9F1F7;
-    padding: 1em 1em 0 1em;
     font-family: 'Lora', serif;
 }
 
+li{
+    list-style-type: none;
+}
 
 .page-list
 {
@@ -235,30 +237,12 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Hover Css*/
 .hovereffect {
     width: 100%;
     height: 100%;
     float: left;
+    align-content: center;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -268,6 +252,7 @@ ul{
 
 .hovereffect .overlay {
     width: 100%;
+    align-content: center;
     height: 100%;
     position: absolute;
     overflow: hidden;
@@ -277,6 +262,7 @@ ul{
 
 .hovereffect img {
     display: block;
+    align-content: center;
     position: relative;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
@@ -288,6 +274,7 @@ ul{
     -webkit-filter: grayscale(1) blur(3px);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
+    align-content: center;
     transform: scale(1.2);
 }
 
@@ -304,6 +291,8 @@ ul{
     display: inline-block;
     text-decoration: none;
     padding: 7px 14px;
+    text-align: center;
+    align-content: center;
     border: 1px solid #fff;
     margin: 50px 0 0 0;
     background-color: grey;
@@ -311,6 +300,7 @@ ul{
 
 .hovereffect a.info:hover {
     box-shadow: 0 0 5px #fff;
+    align-content: center;
 }
 
 .hovereffect a.info, .hovereffect h2 {
@@ -320,6 +310,7 @@ ul{
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
     opacity: 0;
+    align-content: center;
     filter: alpha(opacity=0);
     color: #fff;
     text-transform: uppercase;
@@ -327,6 +318,7 @@ ul{
 
 .hovereffect:hover a.info, .hovereffect:hover h2 {
     opacity: 1;
+    align-content: center;
     filter: alpha(opacity=100);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);

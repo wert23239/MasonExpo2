@@ -93,7 +93,7 @@ class View
     }
 
     public function presentGoHome(){
-        $html = '<a href="http://webdev.cse.msu.edu/~lambe168/MasonExpo2/#Events"><button  class="btn btn-info">Home</button></a>';
+        $html = '<a href="http://webdev.cse.msu.edu/~perrym23/masonexpo/#Events"><button  class="btn btn-info">Home</button></a>';
 
         return $html;
     }

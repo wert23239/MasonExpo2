@@ -62,7 +62,7 @@ HTML;
 <a href="http://www.familydeal.com/"><img class='img-responsive center-block'  src='images/Logo/LaFontaine.png'/></a></div>
 
 <br>
-<h1 class="Events">Events:</h1>
+<h1 class="Events">Events</h1>
 <!--<pre >-->
 <!--Sat June 27th 2017-->
 <!--Ingham County Fairgrounds-->

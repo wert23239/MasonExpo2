@@ -1,6 +1,6 @@
 <?php
 
-require 'lib/game.inc.php';
+require 'lib/site.inc.php';
 
 $debug=true;
 $debug=false;
