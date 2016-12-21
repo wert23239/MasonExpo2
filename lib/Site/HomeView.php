@@ -59,15 +59,17 @@ HTML;
         </div>
         <ul class="event-list w-list-unstyled">
 HTML;
-        for ($i = 0; $i<$Count;$i++) {
+        for ($i = 1; $i<$Count;$i++) {
             $Icon = $this->connections->getCodeIndex($i)->getIcon();
             $html .= <<<HTML
         <li class="event-list-item">
-            <a class="w-inline-block" href='page-post.php?id=$i&Display=1'><img class="event-image" sizes="(max-width: 767px) 33vw, (max-width: 991px) 241.96875px, 312.625px" src="images/Icon/carshow.jpg" srcset="images/Icon/carshow-p-500x358.jpeg 500w, images/Icon/carshow-p-800x572.jpeg 800w, images/Icon/carshow.jpg 1050w">
+            <a class="w-inline-block" href='page-post.php?id=$i&Display=1'><img class="image-responsive" sizes="(max-width: 767px) 33vw, (max-width: 991px) 241.96875px, 312.625px" src='$Icon'>
             </a>
         </li>
 
 HTML;
+//            <a class="w-inline-block" href='page-post.php?id=$i&Display=1'><img class="event-image" sizes="(max-width: 767px) 33vw, (max-width: 991px) 241.96875px, 312.625px" src='$Icon'" srcset="images/Icon/carshow-p-500x358.jpeg 500w, images/Icon/carshow-p-800x572.jpeg 800w, images/Icon/carshow.jpg 1050w">
+
 //            <a href='page-post.php?id=$i&Display=1'>
 //        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 //                <div class="hovereffect">
