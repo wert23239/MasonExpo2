@@ -47,31 +47,71 @@ HTML;
         return $html;
     }
 
+    public function presentEvents()
+    {
+        $Count=$this->connections->getCount();
+        $html="";
+        $html .= <<<HTML
+<div class="main-section">
+    <div class="main-container w-container">
+        <div class="event-div">
+            <h2 class="event-heading">Events</h2>
+        </div>
+        <ul class="event-list w-list-unstyled">
+HTML;
+        for ($i = 0; $i<$Count;$i++) {
+            $Icon = $this->connections->getCodeIndex($i)->getIcon();
+            $html .= <<<HTML
+        <li class="event-list-item">
+            <a class="w-inline-block" href='page-post.php?id=$i&Display=1'><img class="event-image" sizes="(max-width: 767px) 33vw, (max-width: 991px) 241.96875px, 312.625px" src="images/Icon/carshow.jpg" srcset="images/Icon/carshow-p-500x358.jpeg 500w, images/Icon/carshow-p-800x572.jpeg 800w, images/Icon/carshow.jpg 1050w">
+            </a>
+        </li>
+
+HTML;
+//            <a href='page-post.php?id=$i&Display=1'>
+//        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+//                <div class="hovereffect">
+//                    <img class='img-responsive'  src='$Icon'/>
+//                    <div class="overlay">
+//                        <!--<h2>Hover effect 3</h2>-->
+//                        <a class="info" href='page-post.php?id=$i&Display=1'> Go to Event</a>
+//                    </div>
+//                </div>
+//        </div>
+//        </a>
+        }
+        $html.="</ul>";
+        $html.="</div>";
+        $html.="</div>";
+        return $html;
+    }
+
     public function presentTitle()
     {
         $html= <<<HTML
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-xs-8 text-left-cust fadeInLeft animated">June 24th</div>
-    <div class="col-md-6 col-xs-4 text-right-cust fadeInRight animated">2017</div>
-  </div>
+<div class="main-section">
+    <div class="main-container w-container">
+        <div class="date-div">
+            <h2 class="date-left">June 24th</h2>
+            <h2 class="date-right">2017</h2>
+        </div>
+        <h1 class="main-heading" data-ix="hide-section">Outdoor Expo &amp; More!</h1><img class="main-logo" src="images/Logo/LaFontaine.png">
+    </div>
 </div>
-<br>
-<h1 class="modal-title lightSpeedIn animated">Outdoor Expo & More!</h1>
-<a href="http://www.familydeal.com/"><img class='img-responsive center-block'  src='images/Logo/LaFontaine.png'/></a></div>
-
-<br>
-<h1 class="Events">Events</h1>
-<!--<pre >-->
-<!--Sat June 27th 2017-->
-<!--Ingham County Fairgrounds-->
-<!--700 E Ash  Mason, MI 48854-->
-
-<!--outdoorexpoandmore@gmail.com-->
-
-<!--517-204-3854-->
-<!--</pre>-->
+<div class="hide-section main-section">
+    <div class="info-container main-container w-container" data-ix="hide-section">
+        <div class="event-div">
+            <h2 class="click-heading event-heading" data-ix="hide-section">Info</h2>
+        </div>
+        <div>
+            <div class="info-textblock" data-ix="hide-section">Entry Time: 10am - 5pm
+                <br>The event is rain or shine. Sorry, no refunds.
+                <br>Saturday, June 24, 2017 Ingham County Fairgrounds 700 E Ash St. Mason, MI 48854
+                <br>For more information, please call Jessy at 517-281-0092 or email to&nbsp;trevleasure@aol.com</div>
+            <div class="info-clickblock" data-ix="hide-section">Click For Infomation</div>
+        </div>
+    </div>
+</div>
 HTML;
         return $html;
     }
