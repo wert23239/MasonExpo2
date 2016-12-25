@@ -7,7 +7,7 @@ $view= new Site\MapView($site);
 <?php echo $view->presenthead() ?>
 
 <body class="project">
-<?php echo $view->presentGoBack(); ?>
+<?php // echo $view->presentGoBack(); ?>
 <?php echo $view->presentDisplay(); ?>
 
 
