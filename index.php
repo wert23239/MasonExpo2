@@ -18,13 +18,13 @@ $view= new Site\HomeView($site);
     <script type="text/javascript">
         WebFont.load({
             google: {
-                families: ["Trocchi:regular","Lora:regular","Roboto Slab:regular"]
+                families: ["Trocchi:regular","Lora:regular","Roboto Slab:regular", "Roboto Condensed:regular"]
             }
         });
     </script>
     <script src="js/modernizr.js" type="text/javascript"></script>
-    <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+    <link href="images/Icon/M.png" rel="shortcut icon" type="image/x-icon">
+    <link href="images/Icon/M.png" rel="apple-touch-icon">
 </head>
 <?php //echo $view->presenthead() ?>
 <body class="main-body">>

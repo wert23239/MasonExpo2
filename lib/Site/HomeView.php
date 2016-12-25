@@ -55,7 +55,7 @@ HTML;
 <div class="main-section">
     <div class="main-container w-container">
         <div class="event-div">
-            <h2 class="event-heading">Events</h2>
+            <h2 class="event-heading">EVENTS</h2>
         </div>
         <ul class="event-list w-list-unstyled">
 HTML;
@@ -97,20 +97,20 @@ HTML;
             <h2 class="date-left">June 24th</h2>
             <h2 class="date-right">2017</h2>
         </div>
-        <h1 class="main-heading" data-ix="hide-section">Outdoor Expo &amp; More!</h1><img class="main-logo" src="images/Logo/LaFontaine.png">
+        <h1 class="main-heading" data-ix="hide-section">OUTDOOR EXPO &amp; MORE!</h1><img class="main-logo" src="images/Logo/LaFontaine.png">
     </div>
 </div>
 <div class="hide-section main-section">
     <div class="info-container main-container w-container" data-ix="hide-section">
         <div class="event-div">
-            <h2 class="click-heading event-heading" data-ix="hide-section">Info</h2>
+            <h2 class="click-heading event-heading" data-ix="hide-section">INFO</h2>
         </div>
-        <div>
+        <div class="text-div">
             <div class="info-textblock" data-ix="hide-section">Entry Time: 10am - 5pm
                 <br>The event is rain or shine. Sorry, no refunds.
                 <br>Saturday, June 24, 2017 Ingham County Fairgrounds 700 E Ash St. Mason, MI 48854
                 <br>For more information, please call Jessy at 517-281-0092 or email to&nbsp;trevleasure@aol.com</div>
-            <div class="info-clickblock" data-ix="hide-section">Click For Infomation</div>
+            <div class="info-clickblock" data-ix="hide-section">Click For Information</div>
         </div>
     </div>
 </div>
