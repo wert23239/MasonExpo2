@@ -27,7 +27,7 @@ $view= new Site\HomeView($site);
     <link href="images/Icon/M.png" rel="apple-touch-icon">
 </head>
 <?php //echo $view->presenthead() ?>
-<body class="main-body">>
+<body class="main-body">
 <?php echo $view->presentTitle()?>
 <?php echo $view->presentEvents() ?>
 

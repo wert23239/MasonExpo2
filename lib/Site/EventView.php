@@ -40,21 +40,21 @@ class EventView extends DynamicView
         <li class="event-item left">
             <ul class="event-options-list w-clearfix w-list-unstyled">
                 <li class="option-item">
-                    <a class="NoStyle" target="Tab" class="w-inline-block" href="index.php"><div class="option-text icon" data-icon="S"></div>
+                    <a class="NoStyle" class="w-inline-block" href="index.php"><div class="option-text icon" data-icon="S"></div>
                     </a>
                 </li>
                 <li class="option-item" data-ix="highlight-section">
-                    <a target="Tab" class="NoStyle" href="page-post.php?id=$id&Info=1">
+                    <a target="_blank" class="NoStyle" href="page-post.php?id=$id&Info=1">
                     <div class="option-text">Info</div>
                     </a>
                 </li>
                 <li class="option-item">
-                    <a target="TabForum" class="NoStyle" href=$this->form>
+                    <a target="_blank" class="NoStyle" href=$this->form>
                     <div class="option-text">Sign-up</div>
                     </a>
                 </li>
                 <li class="option-item">
-                    <a target="Tab" class="NoStyle" href="page-post.php?id=$id&Map=1">
+                    <a target="_blank" class="NoStyle" href="page-post.php?id=$id&Map=1">
                     <div class="option-text">Map</div>
                     </a>
                 </li>

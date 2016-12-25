@@ -63,7 +63,7 @@ HTML;
             $Icon = $this->connections->getCodeIndex($i)->getIcon();
             $html .= <<<HTML
         <li class="event-list-item">
-            <a class="w-inline-block" href='page-post.php?id=$i&Display=1'><img class="image-responsive" sizes="(max-width: 767px) 33vw, (max-width: 991px) 241.96875px, 312.625px" src='$Icon'>
+            <a class="w-inline-block HoverEffect" href='page-post.php?id=$i&Display=1'><img class="image-responsive" sizes="(max-width: 767px) 33vw, (max-width: 991px) 241.96875px, 312.625px" src='$Icon'>
             </a>
         </li>
 
