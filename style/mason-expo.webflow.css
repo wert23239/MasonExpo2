@@ -8,7 +8,7 @@ body {
 @font-face {
   font-family: RaphaelIcons;
   src: url(fonts/raphaelicons-webfont.eot);
-  src: local('â˜º'),url(fonts/raphaelicons-webfont.woff) format('woff'),url(fonts/raphaelicons-webfont.ttf) format('truetype'),url(fonts/raphaelicons-webfont.svgwebfontKOf9F4sx) format('svg');
+  src: local('â˜º'),url(fonts/raphaelicons-webfont.woff) format('woff'),url(fonts/raphaelicons-webfont.ttf) format('truetype'),url(fonts/raphaelicons-webfont.svg) format('svg');
   font-weight: 400;
   font-style: normal
 }
@@ -178,7 +178,7 @@ h2 {
 }
 
 .info-textblock {
-  display: block;
+  display: none;
   margin-bottom: 2px;
   padding-top: 10px;
   padding-bottom: 9px;
@@ -193,7 +193,7 @@ h2 {
 
 
 .info-clickblock {
-  display: none;
+  display: block;
   overflow: visible;
   margin-top: 9px;
   margin-bottom: 24px;
