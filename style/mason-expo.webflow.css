@@ -108,9 +108,7 @@ h2 {
   border-radius: 6px;
   box-shadow: 0 0 2px 8px #495061, 0 0 0 8px #fff;
   text-align: center;
-  background-position: 0px 0px;
-  background-size: 238px;
-  background-image: url('backgrounds/texturetastic_gray.png');
+  background-color: #E2E2E2;
   width: 100%;
   height: 100%;
   left: 0;
@@ -192,7 +190,7 @@ h2 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #201d1d;
   font-size: 21px;
-  line-height: 48px;
+  line-height: 36px;
   font-weight: 600;
   text-align: left;
 }
@@ -206,7 +204,7 @@ h2 {
   padding-top: 9px;
   padding-bottom: 9px;
   color: #201d1d;
-  font-size: 4.3em;
+  font-size: 3em;
 }
 
 .event-container.main-container {
