@@ -11,18 +11,18 @@ $view= new Site\HomeView($site);
     <title>Mason Expo</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
-    <link href="style/normalize.css" rel="stylesheet" type="text/css">
-    <link href="style/webflow.css" rel="stylesheet" type="text/css">
     <link href="style/mason-expo.webflow.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript">
         WebFont.load({
             google: {
-                families: ["Trocchi:regular","Lora:regular","Roboto Slab:regular", "Roboto Condensed:regular"]
+                families: ["Roboto Condensed:regular"]
             }
         });
     </script>
-    <script src="js/modernizr.js" type="text/javascript"></script>
+
+    <script src="style/js/modernizr.js" type="text/javascript"></script>
     <link href="images/Icon/M.png" rel="shortcut icon" type="image/x-icon">
     <link href="images/Icon/M.png" rel="apple-touch-icon">
 </head>
@@ -32,7 +32,6 @@ $view= new Site\HomeView($site);
 <?php echo $view->presentEvents() ?>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script src="style/js/webflow.js" type="text/javascript"></script>
 <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
