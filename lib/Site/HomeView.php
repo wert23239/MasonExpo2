@@ -110,7 +110,7 @@ HTML;
                 <br>The event is rain or shine. Sorry, no refunds.
                 <br>Saturday, June 24, 2017 Ingham County Fairgrounds 700 E Ash St. Mason, MI 48854
                 <br>For more information, please call Jessy at 517-281-0092 or email to&nbsp;trevleasure@aol.com</div>
-            <div class="info-clickblock" data-ix="hide-section">Click For Information</div>
+            <div class="info-clickblock" data-ix="hide-section">Click for information</div>
         </div>
     </div>
 </div>
